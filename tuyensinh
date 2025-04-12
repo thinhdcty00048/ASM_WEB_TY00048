@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Tuyển sinh | FPT POLYSCHOOL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="tuyensinh-body">
+  <div class="container">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="jobs.html">Công Việc</a></li>
+          <li><a href="tuyensinh.html" class="active">Tuyển sinh</a></li>
+          <li><a href="events.html">Sự kiện</a></li>
+          <li><a href="#">MORE</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Thông tin Tuyển sinh</h1>
+      <p>Chào mừng bạn đến với trang tuyển sinh của FPT POLYSCHOOL!</p>
+
+      <h2>📌 Các ngành đào tạo</h2>
+      <ul>
+        <li>Công nghệ thông tin</li>
+        <li>Thiết kế đồ họa</li>
+        <li>Quản trị kinh doanh</li>
+        <li>Marketing</li>
+      </ul>
+
+      <h2>📅 Thời gian tuyển sinh</h2>
+      <p>Tuyển sinh liên tục trong năm 2025.</p>
+
+      <h2>📍 Địa điểm</h2>
+      <p>Toàn bộ cơ sở trên toàn quốc – Hà Nội, TP.HCM, Đà Nẵng, Cần Thơ...</p>
+
+      <h2>📞 Liên hệ</h2>
+      <p>Email: caodang@fpt.edu.vn</p>
+      <p>Hotline: 1900 9999</p>
+    </main>
+  </div>
+</body>
+</html>
