@@ -4,6 +4,19 @@
   <meta charset="UTF-8">
   <title>Tuyển sinh | FPT POLYSCHOOL</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .navbar {
+      display: flex;
+      background-color: #f97316;
+      justify-content: space-around;
+      padding: 10px 0;
+      font-weight: bold;
+    }
+    .navbar div {
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body class="tuyensinh-body">
   <div class="container">
