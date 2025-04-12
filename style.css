@@ -84,7 +84,7 @@ body {
   justify-content: space-around;
   padding: 10px 0;
   font-weight: bold;
-  position: relative; /* hoặc fixed nếu muốn giữ cố định khi cuộn */
+  position: relative;
   top: 0;
   width: 100%;
 }
