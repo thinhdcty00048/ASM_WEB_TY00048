@@ -4,32 +4,19 @@
   <meta charset="UTF-8">
   <title>Tuyển sinh | FPT POLYSCHOOL</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .navbar {
-      display: flex;
-      background-color: #f97316;
-      justify-content: space-around;
-      padding: 10px 0;
-      font-weight: bold;
-    }
-    .navbar div {
-      padding: 10px 20px;
-      cursor: pointer;
-    }
-  </style>
 </head>
 <body class="tuyensinh-body">
   <div class="container">
     <header>
       <nav>
-        <ul>
-          <li><a href="index.html">Trang chủ</a></li>
-          <li><a href="news.html">NEWS</a></li>
-          <li><a href="jobs.html">Công Việc</a></li>
-          <li><a href="tuyensinh.html" class="active">Tuyển sinh</a></li>
-          <li><a href="events.html">Sự kiện</a></li>
-          <li><a href="#">MORE</a></li>
-        </ul>
+        <div class="navbar">
+            <a href="index.html">Trang chủ</a>
+            <a href="news.html">NEWS</a>
+            <a href="jobs.html">Công Việc</a>
+            <a href="tuyensinh.html" class="active">Tuyển sinh</a>
+            <a href="events.html">Sự kiện</a>
+            <a href="#">MORE</a>
+          </div>
       </nav>
     </header>
 
