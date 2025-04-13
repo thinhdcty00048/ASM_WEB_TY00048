@@ -95,3 +95,36 @@ body {
   text-decoration: none;
   transition: background 0.3s;
 }
+.orange-box {
+  background-color: #f97316;
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.white-box {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Làm chữ to hơn cho tiêu đề */
+.white-box h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.white-box h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.white-box p,
+.white-box li {
+  font-size: 16px;
+  line-height: 1.6;
+}
