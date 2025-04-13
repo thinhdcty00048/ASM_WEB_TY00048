@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ | FPT POLYSCHOOL</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .faq-container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #f97316;
+      color: white;
+      border-radius: 20px;
+    }
+
+    .faq-container h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .faq-search {
+      margin-bottom: 20px;
+    }
+
+    .faq-search input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+    }
+
+    .faq-item {
+      background-color: white;
+      color: black;
+      margin-bottom: 15px;
+      padding: 15px 20px;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    .faq-item .answer {
+      display: none;
+      margin-top: 10px;
+      color: #333;
+    }
+
+    .faq-item.active .answer {
+      display: block;
+    }
+
+    .hidden-by-default {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Trang chủ</a>
+    <a href="news.html">NEWS</a>
+    <a href="jobs.html">Công Việc</a>
+    <a href="tuyensinh.html">Tuyển sinh</a>
+    <a href="events.html">Sự kiện</a>
+    <a href="about.html">Giới thiệu</a>
+    <a href="faq.html" class="active">Câu hỏi thường gặp</a>
+    <a href="contact.html">Liên hệ</a>
+  </div>
+
+  <div class="faq-container">
+    <h1>Câu hỏi thường gặp</h1>
+    <div class="faq-search">
+      <input type="text" id="faqSearch" placeholder="Tìm kiếm câu hỏi...">
+    </div>
+
+    <div class="faq-item">
+      <strong>FPT POLYSCHOOL đào tạo những ngành nào?</strong>
+      <div class="answer">Chúng tôi đào tạo các ngành như CNTT, Thiết kế đồ họa, Marketing, Quản trị kinh doanh...</div>
+    </div>
+
+    <div class="faq-item">
+      <strong>Thời gian tuyển sinh là khi nào?</strong>
+      <div class="answer">Tuyển sinh liên tục trong năm, theo nhiều đợt. Bạn có thể đăng ký online mọi lúc.</div>
+    </div>
+
+    <div class="faq-item">
+      <strong>Học phí trung bình là bao nhiêu?</strong>
+      <div class="answer">Học phí trung bình từ 5 đến 7 triệu đồng mỗi học kỳ, tùy chương trình học.</div>
+    </div>
+
+    <div class="faq-item">
+      <strong>FPT có ký túc xá không?</strong>
+      <div class="answer">Hiện tại ở Bà Rịa có hỗ trợ giới thiệu chỗ trọ gần trường, chưa có ký túc xá riêng.</div>
+    </div>
+
+    <div class="faq-item hidden-by-default">
+      <strong>Làm sao để đăng ký học online?</strong>
+      <div class="answer">Bạn có thể truy cập trang tuyển sinh và chọn Đăng ký để điền thông tin trực tuyến.</div>
+    </div>
+
+    <div class="faq-item hidden-by-default">
+      <strong>Thời gian học mỗi tuần là bao lâu?</strong>
+      <div class="answer">Sinh viên học từ thứ 2 đến thứ 6, mỗi ngày có 1-2 ca học, thời lượng khoảng 15-20 tiết/tuần.</div>
+    </div>
+
+    <div class="faq-item hidden-by-default">
+      <strong>Có hỗ trợ thực tập không?</strong>
+      <div class="answer">Trường liên kết với nhiều doanh nghiệp để hỗ trợ sinh viên thực tập đúng chuyên ngành.</div>
+    </div>
+
+    <div class="faq-item hidden-by-default">
+      <strong>Có thể chuyển ngành sau khi học không?</strong>
+      <div class="answer">Bạn có thể chuyển ngành sau khi kết thúc học kỳ đầu tiên, nếu đáp ứng yêu cầu của ngành chuyển đến.</div>
+    </div>
+  </div>
+
+  <script>
+    const items = document.querySelectorAll('.faq-item, .faq-item.hidden-by-default');
+    items.forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+
+    const searchInput = document.getElementById('faqSearch');
+    searchInput.addEventListener('input', () => {
+      const keyword = searchInput.value.toLowerCase();
+      items.forEach(item => {
+        const question = item.querySelector('strong').innerText.toLowerCase();
+        item.style.display = question.includes(keyword) ? 'block' : 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>

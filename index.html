@@ -135,6 +135,35 @@
       <i class="fab fa-twitter"></i>
     </div>
   </div>
+  
+  <script>
+    document.querySelector('.search-box').addEventListener('keypress', function (e) {
+      if (e.key === 'Enter') {
+        const query = e.target.value.toLowerCase().trim();
+        const map = {
+          'trang chủ': 'index.html',
+          'news': 'news.html',
+          'tin tức': 'news.html',
+          'công việc': 'congviec.html',
+          'tuyển sinh': 'tuyensinh.html',
+          'sự kiện': 'sukien.html',
+          'giới thiệu': 'about.html',
+          'liên hệ': 'contact.html',
+          'faq': 'faq.html',
+          'câu hỏi thường gặp': 'faq.html'
+        };
+
+        for (const keyword in map) {
+          if (query.includes(keyword)) {
+            window.location.href = map[keyword];
+            return;
+          }
+        }
+
+        alert('Không tìm thấy nội dung phù hợp.');
+      }
+    });
+  </script>
 
 </body>
 </html>
